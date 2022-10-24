@@ -153,7 +153,7 @@ Modify the block below if there are any special requirements.
   <strong>Requirements:</strong>
   {% if online == "false" %}
     Participants must bring a laptop with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. This workshop is open to anyone. Please register through the University of Idaho Institute for Modeling Collaboration and Innovation (IMCI) here: https://imci.uidaho.edu/fall-2022-carpentries-workshops/. No prior coding experience is required. 
   {% else %}
     Participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
