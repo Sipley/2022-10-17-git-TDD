@@ -308,9 +308,10 @@ change the value of `carpentry` to `incubator`.
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% endif %}
 
-<hr/>
-
 {% endcomment %}
+
+
+<hr/>
 
 
 {% comment %}
