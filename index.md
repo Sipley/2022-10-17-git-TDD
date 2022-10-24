@@ -4,7 +4,7 @@ layout: workshop      # DON'T CHANGE THIS.
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
 venue: "University of Idaho"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "Herpetology Room, Life Sciences South, 875 Perimeter Drive, Moscow, ID"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+address: "Herpetology Room (LSS 341), Life Sciences South, 875 Perimeter Drive, Moscow, ID and online, as needed"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "46.727198"        # decimal latitude of workshop venue (use https://www.latlong.net/)
@@ -13,10 +13,11 @@ humandate: "Mondays, Oct 17-Dec 12, 2022"    # human-readable dates for the work
 humantime: "2:30 - 6:00 pm PST"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2022-10-17      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2022-12-12        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Breanna Sipley, MS","JT, PhD","Luke Harmon, PhD"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["helper one", "helper two"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["sipl0809@vandals.uidaho.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+instructor: ["Breanna Sipley","JT VanLeuven","Luke Harmon"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["sipl0809@vandals.uidaho.edu","jvanleuven@uidaho.edu", "lukeh@uidaho.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes:  https://join.slack.com/t/uicarpentries/shared_invite/zt-1h8o28vvb-hQi6nZf~dB7ins82errkC (Please search for and join the channel called “#2022-version-control” and please note this
+invitation link will expire in 30 days from 2022-10-06) # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -26,9 +27,6 @@ Check DC curriculum
 
 {% if site.carpentry == "dc" %}
 {% unless site.curriculum == "dc-astronomy" or site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-socsci" or site.curriculum == "dc-geospatial" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Data Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
 {% endunless %}
 {% endif %}
 
@@ -38,9 +36,6 @@ Check SWC curriculum
 
 {% if site.carpentry == "swc" %}
 {% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Software Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, or <code>swc-gapminder</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
 {% endunless %}
 {% endif %}
 
@@ -70,8 +65,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% comment %}
 INTRODUCTION
 
-Edit the general explanatory paragraph below if you want to change
-the pitch.
+Learners in this workshop will learn how to maintain software using test-driven development in `R`, collaborate using version control with Git towards a shared scientific goal (fixing bugs in the popular biological `R` package `GEIGER`), and practice inclusive pedagogical principles.
 {% endcomment %}
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
@@ -88,8 +82,8 @@ This is a pilot workshop, testing out a lesson that is still under development. 
 {% comment %}
 AUDIENCE
 
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
+This workshop is open to anyone. Please register through the University of Idaho Institute for Modeling Collaboration and Innovation (IMCI) here: https://imci.uidaho.edu/fall-2022-carpentries-workshops/. No prior coding experience is required. 
+
 {% endcomment %}
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
